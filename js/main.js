@@ -76,11 +76,18 @@ function pltProductos( arrayProductos, categoria = "" ){
             <div class="col-x-3 col-l-4 col-s-5"> 
                 <div class="item clproducto " onClick="detailProducto(${producto.id})" 
                 style="cursor: pointer!important;" producto_id="${producto.id}" >
-                    
-                    <img src="${producto.img}" alt="img car">
+                    <div style="    height: 270px;
+                                    overflow: hidden;">
+                        <img src="${producto.img}" alt="img car">
+                    </div>
+
                     <h3>${producto.nom}</h3>
-                
-                    <p>${producto.description}</p>
+                    <div style="    height: 72px;
+                                    overflow: hidden;">
+                        <p>${producto.description}</p>
+                    </div>
+                    <a style="font-size: 20px; color:red"> más info...</a>
+                 
                         <hr>
                     
                         <div class="flex-container item-footer">

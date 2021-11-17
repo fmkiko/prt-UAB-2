@@ -1,6 +1,6 @@
 <?php
     // Conexión con DB.
-    $dns = 'mysql:host=localhost;port=3306;dbname=segunda_mano;charset=utf8mb4';
+    $dns = 'mysql:host=localhost;port=3306;dbname=tienda-jan;charset=utf8mb4';
     $user = 'root';
     $psw = 'bitnami';
     try{

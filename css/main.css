@@ -81,32 +81,36 @@ body{
 }
 
 /** CSS Nav bar **/
-
 .container-nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80px;
-    width: 100%;
-    background-color: var(--color-black);
+    display: none;
 }
-.container-nav div{
-    width: var(--width-center);
-    margin: 0 auto;
-}
+@media(min-width: 600px){
+    .container-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+        width: 100%;
+        background-color: var(--color-black);
+    }
+    .container-nav div{
+        width: var(--width-center);
+        margin: 0 auto;
+    }
 
-.container-nav a{
-    padding:  10px 20px ;
-    font-size: var(--text-size-nav);
-    color: var(--color-nav);
-    text-decoration: none;
-   
-}
-.container-nav a:hover{
-    background-color: var(--title-page);
-}
-.menu-selecionado{
-    border-bottom: 3px solid var(--title-page);
+    .container-nav a{
+        padding:  10px 20px ;
+        font-size: var(--text-size-nav);
+        color: var(--color-nav);
+        text-decoration: none;
+    
+    }
+    .container-nav a:hover{
+        background-color: var(--title-page);
+    }
+    .menu-selecionado{
+        border-bottom: 3px solid var(--title-page);
+    }
 }
 
 /** title page**/
@@ -139,6 +143,7 @@ body{
 }
 .item img{
     width: 100%;
+    height: 100%;
 }
 
 .item-footer{
@@ -151,11 +156,26 @@ body{
     font-size: 22px;
 
 }
+.card-img{
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img-producto{
+    height: 270px;
+    overflow: hidden;
+}
+
 /*******************/
 /**main**/
 .container-main{
-    width: var(--width-center);
+    width: 90%;
     margin: 0 auto;
+}
+@media(min-width: 600px){
+    .container-main{
+        width: 70%;
+    }
 }
 
 /** CSS  registro**/
@@ -211,7 +231,7 @@ body{
 
 footer{
     width: 100%;
-    height: 60px;
+   
     text-align: center;
     background-color: var(--color-black);
     margin-top: 20px;

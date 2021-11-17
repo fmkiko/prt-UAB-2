@@ -11,11 +11,13 @@
             foreach( $categorias as $categoria ){
                 //include 'componentes/categorias.php'
         ?>
-                <div class=" col-l-4 col-s-5">
+                <div class=" col-l-6 col-s-6 content-card-categoria">
                     <div class="item ">       
                         <div style="cursor: pointer!important;" 
                         onClick="getProductos(<?=$categoria['id'];?>,'<?php echo $categoria['name'];?>' )">
-                            <img src="<?php echo $categoria['img']; ?>" alt="img car">
+                            <div class="card-img">
+                                <img src="<?php echo $categoria['img']; ?>" alt="img car">
+                            </div>
                             <h3><?php echo $categoria['name'];?></h3>
                         </div>  
                     </div>
@@ -29,5 +31,7 @@
     <div class="show-productos " style="">
 
     </div>
+
+ 
         
 </div>

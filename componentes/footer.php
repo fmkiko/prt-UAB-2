@@ -3,5 +3,5 @@
 
     
 <footer class="footer">
-    <p>Copyright 2021-Fran</p>
+    <p>Copyright 2021</p>
 </footer> 

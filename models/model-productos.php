@@ -3,7 +3,7 @@
 // Todas las Categorias
 function getCategorias(){
     $conn = require_once __DIR__.'/../models/connectDB.php';
-    $sql = 'SELECT * FROM categorias';
+    $sql = 'SELECT * FROM categories';
     try{
         $stm = $conn->prepare($sql);
         if(!$stm->execute()){

@@ -7,7 +7,7 @@
         <h2>Fromulario de registro:</h2>
     </div>
     
-    <form>
+    <form action="controllers/registro.php" method="POST">
         <div>
             <label for="name">Nombre:</label>
             <input type="text" name="name" id="name" 
@@ -39,7 +39,7 @@
 
         <div>
             <label for="address">Población</label>
-            <input type="text" name="address" id="adr" 
+            <input type="text" name="pbl" id="adr" 
             maxlength="30"
             required>
         </div>
@@ -51,7 +51,7 @@
             required>
         </div>
 
-        <button class="boton">Enviar</button>
+        <button class="boton" >Enviar</button>
 
     </form>
 </div>
