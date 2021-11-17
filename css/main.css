@@ -1,4 +1,16 @@
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 /** Varibles **/
 
 :root{
@@ -12,13 +24,13 @@
     box-sizing: border-box;
   }
 body{
+    font-family: 'Roboto', serif;
     margin: 0;
-    padding: 0;
-  
+    padding: 0; 
 }
 
 .section-center{
-    height: 90vh;
+  
 }
 
 /**Grid**/
@@ -86,6 +98,9 @@ body{
 }
 @media(min-width: 600px){
     .container-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -93,9 +108,12 @@ body{
         width: 100%;
         background-color: var(--color-black);
     }
-    .container-nav div{
+    .wrap-nav{
         width: var(--width-center);
         margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .container-nav a{
@@ -105,11 +123,44 @@ body{
         text-decoration: none;
     
     }
-    .container-nav a:hover{
+    .clas-menu a:hover{
         background-color: var(--title-page);
     }
     .menu-selecionado{
         border-bottom: 3px solid var(--title-page);
+    }
+    .icon-hover:hover{
+        color:var(--title-page);
+    }
+    .dropdown-menu li:hover{
+        border-bottom: 3px solid var(--title-page);
+    }
+    .coursor-pointer{
+        cursor: pointer;
+    }
+
+    /**menu user**/
+    .dropdown-menu {
+        padding: 10px;
+        background: rgb(66, 57, 57);
+        border:0px solid white;
+        border-radius: 10px;
+        color:white;
+        overflow: hidden;
+        font-size: 0.8em;
+        position: absolute;
+        top:40px;
+        list-style:none;
+        display: none;
+    }
+ 
+    .dropdown-menu li{
+        margin: 0;
+        padding: 5px 20px ;
+        text-align: left;
+    }
+    .dropdown-menu li:hover{
+      
     }
 }
 
@@ -120,6 +171,7 @@ body{
     justify-content: center;
     width: 100%;
     height: 100px;
+    margin-top: 80px;
     text-align: center;
     background-color: var(--title-page);
 }
@@ -231,7 +283,7 @@ body{
 
 footer{
     width: 100%;
-   
+ 
     text-align: center;
     background-color: var(--color-black);
     margin-top: 20px;

@@ -39,7 +39,7 @@
 
         <div>
             <label for="address">Población</label>
-            <input type="text" name="pbl" id="adr" 
+            <input type="text" name="pbl" id="pbl" 
             maxlength="30"
             required>
         </div>
@@ -51,7 +51,7 @@
             required>
         </div>
 
-        <button class="boton" >Enviar</button>
+        <button class="boton" onClick="sendDatosForm()">Enviar</button>
 
     </form>
 </div>

@@ -14,7 +14,7 @@
                 <div class=" col-l-6 col-s-6 content-card-categoria">
                     <div class="item ">       
                         <div style="cursor: pointer!important;" 
-                        onClick="getProductos(<?=$categoria['id'];?>,'<?php echo $categoria['name'];?>' )">
+                            onClick="getProductos(<?=$categoria['id'];?>,'<?php echo $categoria['name'];?>' )">
                             <div class="card-img">
                                 <img src="<?php echo $categoria['img']; ?>" alt="img car">
                             </div>
@@ -25,10 +25,12 @@
             
         <?php } ?>
 
-    </div>
+    </div><!-- End categorías -->
 
-    <!--Lista de productos en AJAX -->
-    <div class="show-productos " style="">
+
+
+    <!--Lista de productos en AJAX + detalles -->
+    <div class="show-productos " >
 
     </div>
 

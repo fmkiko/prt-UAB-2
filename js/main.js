@@ -7,7 +7,7 @@ function getProductos(id, categoria){
     $('.show-productos').css('display', 'block')
     $('.section-center').css('height:', 'auto' );
     // limpiamos el DOM
-   // $('.div-categorias').css('display', 'none');
+    $('.div-categorias').css('display', 'none');
     // Ponemos el title 
    // $('#title-list').text('Productos');
    
@@ -92,7 +92,9 @@ function pltProductos( arrayProductos, categoria = "" ){
                     
                         <div class="flex-container item-footer">
                             <p>Precio: ${producto.price}<span>€</span></p>
-                            <button>Carrito</button>
+                            <button style=" border: 0px solid "><span class="material-icons md-36">
+                            shopping_cart
+                            </span></button>
                         </div>
             
                 </div>
@@ -121,7 +123,9 @@ function pltDetailProductos( producto ){
                     
                         <div class="flex-container item-footer">
                             <p>Precio: ${producto.price}<span>€</span></p>
-                            <button>Carrito</button>
+                            <button style=" border: 0px solid ">
+                            <span class="material-icons md-36">shopping_cart
+                            </span></button>
                         </div>
             
                 </div>
